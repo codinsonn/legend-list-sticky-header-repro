@@ -91,11 +91,10 @@ function groupByDay(transactions: Tx[]): DaySection[] {
 
 function formatDayTitle(isoDate: string): string {
   const [y, m, d] = isoDate.split('-').map(Number);
-  const month = new Date(y, m - 1, d).toLocaleDateString('en-GB', {
+  return new Date(y, m - 1, d).toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'long',
   });
-  return `${d} ${month}`;
 }
 
 function filterTransactions(transactions: Tx[], filter: Filter): Tx[] {
