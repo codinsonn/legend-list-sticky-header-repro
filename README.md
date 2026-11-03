@@ -34,6 +34,10 @@ Use Expo Go on the iOS Simulator or a device on the same network.
 
 **Actual (iOS):** one or more headers stay at their old offset and paint over rows from the previous section. Most visible when switching from **Payments** → **All** (rows added above/between visible content).
 
+### Preview
+
+https://github.com/user-attachments/assets/c3a034fd-a806-4695-b682-eb475295d0e9
+
 ## Workarounds (in-app toggles)
 
 - **Sticky headers** off → layout is correct (headers scroll away; no stickiness).
